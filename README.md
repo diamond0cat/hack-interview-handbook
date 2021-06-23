@@ -4,6 +4,11 @@
 coding:主体框架与细节分开
 代码outstanding: 预判
 
+### 练习反向思维，正着不行反着来,几个例子：
+- 岛屿的最大面积 --> 内陆湖也算在岛内呢?
+- 满足不等式的最大值
+
+
 #### target
 easy:5mins
 medium:15-20mins
@@ -24,7 +29,9 @@ hard:20-30mins
 三刷：
 综合性题目，尽量独立实现+测试
 
-### 如何做题：
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_22-09-58.png)
+
+### 如何做题： //从模型出发
 - 第一步 理解体面
   - 想一想更多的例子和测试数据，看看有没有遗漏的地方
   - 提炼题目中的关键信息、变化信息
@@ -58,7 +65,17 @@ hard:20-30mins
 - 有助于加深自己的理解，以后也可以回看自己的题解，快速复习
 
 
-- 
+
+### 时间复杂度的logn为什么没有底数？  log以2为底, 通过换底公式，可以除一个常数，在底数不一样的对数之间变换，复杂度里常数是忽略的，所以没有底数
+
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_22-03-59.png)
+
+
+
+linux 默认系统栈只有8M
+堆基本上跟内存大小同级
+
 
 ### 数据驱动算法
 - 先学线性数据结构,然后学习其上各种灵活的算法
@@ -154,3 +171,19 @@ hard:20-30mins
 - 二分
 - 排序
 - 贪心
+
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_22-05-45.png)
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_22-06-53.png)
+
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_22-07-24.png)
+
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_22-07-55.png)
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_22-08-32.png)
+
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_22-08-43.png)
