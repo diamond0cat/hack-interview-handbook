@@ -8,6 +8,19 @@
 
 ![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_21-08-59.png)
 
+### 差分是前缀和的逆运算,相邻相减就是差分
+
+### 差分用关于对子段的操作（修改），前缀和只查询不修改, 对前缀和数组求差分就是原数组，对差分数组求前缀和就是原数组
+
+#### 差分的应用：对子段的操作
+
+
+
+
+
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_21-28-47.png)
+
 ### 前缀和差分问题分类汇总
 
 

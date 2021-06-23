@@ -1,0 +1,32 @@
+### 为什么都是固定右端点，看左端点的取值范围：
+#### 因为这样是前缀和，如果先for l,在for r，就成了后缀和了，跟之前的式子不一样了，需要倒着，更麻烦一些
+
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_21-41-55.png)
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_21-39-46.png)
+
+
+
+
+```java
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+        // pair<value, index>
+        vector<pair<int,int>> nums;
+        for (int i = 0; i < numbers.size(); i++) {
+            nums.push_back(make_pair(numbers[i], i));
+        }
+        sort(nums.begin(),nums.end());
+        int j = nums.size() - 1;
+        for (int i = 0; i < nums.size(); i++) {
+            while (i < j && nums[i].first + nums[j].first > target) j--;
+            if (i < j && nums[i].first + nums[j].first == target) {
+                return {nums[i].second, nums[j].second};
+            }
+        }
+        return {};
+    }
+};
+```
