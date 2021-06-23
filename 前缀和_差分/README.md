@@ -1,4 +1,12 @@
 
+#### 前缀和定义： 原数组A 为了方便 下标从1开始
+### 前缀和使用场景： 
+
+#### S[i] = A[1….j] = S[i - 1] + A[i]  //物理意义：s[i] 是A的前i个数相加
+### #s[1]是A的第1个数
+#### s[2]是A的前两个数相加
+
+![alt txt](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/imgSnipaste_2021-06-22_21-08-59.png)
 
 ### 前缀和差分问题分类汇总
 
