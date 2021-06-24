@@ -1,4 +1,6 @@
+dp的本质是recursion
 
+DP vs DFS vs Recursion vs topological order
 
 ##### 问题(形式化) 方案的初始形态-> 中间形态->中间形态 ->目标(可行方案/最优方案)状态空间
 
