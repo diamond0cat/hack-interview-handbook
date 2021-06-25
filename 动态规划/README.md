@@ -15,6 +15,9 @@ DP vs DFS vs Recursion vs topological order
 -  2.简化状态(用最少的值去代表一个状态)
 - 3.推导(怎么从一个状态搜到下一个状态)
 
+分析过程：top-down
+实现过程：bottom up
+
 
 例子： 300. longest increasing subsequence
 
