@@ -1,5 +1,14 @@
 树的高度，深度: 题目里面都会说清楚高度、深度的定义：深度和层都是从上往下数，高度是从下往上计数，深度和高度都从0开始编号，层从1开始编号
 
+如果用pure recursion, 遍历的时候每个节点还是只遍历一次，但是在连接 左，根，右这三部分的时候，还有多余的拷贝list,要先连接再返回
+如何避免这些多余的拷贝？  维护一个全局的数据结构，把遍历过的点保存在里面
+
+
+
+
+
+递归只看一层
+
 ### Full Binary Tree 
 - A Binary Tree is a full binary tree if every node has 0 or 2 children. The following are the examples of a full binary tree. We can also say a full binary tree is a binary tree in which all nodes except leaf nodes have two children. 
 ```
