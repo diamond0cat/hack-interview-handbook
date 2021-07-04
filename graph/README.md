@@ -9,3 +9,12 @@
 
 
 ![20210702214711](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/pictures/20210702214711.png)
+
+
+bfs能确定遍历深度
+
+
+dfs:无向图找环
+
+bfs: 有向图找环
+
