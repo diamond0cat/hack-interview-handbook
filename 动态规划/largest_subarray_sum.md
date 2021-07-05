@@ -1,0 +1,5 @@
+
+
+start from brute force
+
+
