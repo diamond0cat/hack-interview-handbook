@@ -25,3 +25,11 @@ try to find a valid induction rule:
 
 推导base case //通过induction rule来推
 dp[0]
+
+
+优化： 通过哪个方面：
+1.先考虑空间： 可以优化空间：这里的dp[i]只depend on dp[i - 1]
+
+
+2. fill in order  : 如果是二维的情况，filling order不是唯一的
+
