@@ -1,7 +1,8 @@
 ### Source:
-- JiuZhang笔记,laioffer笔记， acwing
+- JiuZhang笔记,laioffer笔记(yan+derek+大班)， acwing
 - 
 
+dp的本质是对DAG做遍历
 dp的本质是recursion
 
 DP vs DFS vs Recursion vs topological order
