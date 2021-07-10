@@ -40,3 +40,9 @@ k = {2,3}
 状态空间：所有可能的下标序列就是状态空间
 
 
+substring, subsequence先try 一维dp
+
+切的一个序列的问题就是subsequence的问题
+
+
+
