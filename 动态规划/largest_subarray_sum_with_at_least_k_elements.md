@@ -41,4 +41,8 @@ public‌ ‌class‌ ‌Solution‌ ‌{‌ ‌
 Time‌ ‌O(n)‌ ‌
 Space‌ ‌O(1)‌ ‌
 
+
+method 2:sliding window
+
+
 ```
