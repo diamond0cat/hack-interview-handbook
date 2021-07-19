@@ -12,6 +12,21 @@
 
 
 ### 朴素解法
+
+```java
+    public int[] twoSum(int[] nums, int target) {
+        // brute force
+        if (nums == null || nums.length == 0) return new int[]{-1, -1};
+        
+        for (int i = 1; i < nums.length ;i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[i] + nums[j] == target) return new int[]{j, i};
+            }
+        }
+        return new int[]{-1, -1};
+    }
+```
+
 - 由于我们每次要从数组中找两个数。
 
 * 因此一个很简单的思路是：使用两重循环枚举下标 i 和 j ，分别代表要找的两个数。
