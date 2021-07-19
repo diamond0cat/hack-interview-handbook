@@ -2,6 +2,9 @@
 - JiuZhang笔记,laioffer笔记(yan+derek+大班)， acwing
 - 
 
+
+![20210718182544](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/pictures/20210718182544.png)
+
 dp的本质是对DAG做遍历
 dp的本质是recursion
 
