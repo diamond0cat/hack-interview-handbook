@@ -21,6 +21,8 @@ brute force: 解法一
 空间复杂度：虽然我们用到了递归，但是可以看到这个递归属于尾递归，所以编译器不需要不停地堆栈，所以空间复杂度为 O(1)。
 
 
+![20210722165310](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/algorithm/20210722165310.png)
+
 
 
 ```java
@@ -30,7 +32,7 @@ class Solution {
         int len = nums1.length + nums2.length;
         if (len % 2 == 1) {
             return findKth(nums1, 0, nums2, 0, len / 2 +1);
-        } else {
+        } else { //取中间两个数的平均数
             return (findKth(nums1, 0, nums2, 0, len / 2) + findKth(nums1, 0, nums2, 0, len / 2 + 1)) / 2.0;
         }
     }
