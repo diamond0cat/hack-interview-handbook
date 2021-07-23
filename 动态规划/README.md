@@ -2,6 +2,11 @@
 - JiuZhang笔记,laioffer笔记(yan+derek+大班)， acwing
 - 
 
+做dp题目的步骤:
+1.下好recursion定义，problem和subproblem,如何合理使用recursion rule
+2.如何对所有解进行分类，每一类对应一个subproblem
+3. base case由induction rule来推
+
 
 ![20210718182544](https://raw.githubusercontent.com/corykingsf/hack-system-design-pixel/main/pictures/20210718182544.png)
 
