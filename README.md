@@ -1,7 +1,7 @@
 # hack-interview-handbook
 背诵模板，背诵模型， 不是背诵解法
 
-backtracking和pure recursion的联系： dfs backtracking每一层做一个什么选择，所有dfs都是求所有解的问题，每一层干什么事代表对所有解的一种分类的方法，当前层有多少种选择，
+## backtracking和pure recursion的联系： dfs backtracking每一层做一个什么选择，所有dfs都是求所有解的问题，每一层干什么事代表对所有解的一种分类的方法，当前层有多少种选择，
 有多少种选择就可以分成多少类，每一类都对应一个subproblem解决完之后的结果，
 
 
