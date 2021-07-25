@@ -62,7 +62,7 @@ method 1: 哈希
 
 * 当动手将想法转化为代码时，会发现如果先敲定第一个数，将后面的数加入哈希表，再进行下一位的遍历的时候，还需要将该数值从哈希表中进行删除。
 
-```
+```java
 class Solution {
     public int[] twoSum(int[] nums, int t) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -83,7 +83,7 @@ class Solution {
 
 具体的做法是，边遍历边存入哈希表，遍历过程中使用的下标 i 用作敲定第二个数，再从现有的哈希表中去找另外一个目标数（由于下标 i 前面的数都被加入哈希表了，即在下标 i 前面去找第一个数）。
 
-```
+```java
     public int[] twoSum(int[] nums, int target) {
         // sanity check
         if (nums == null || nums.length == 0) return new int[]{-1, -1};
