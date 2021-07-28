@@ -57,7 +57,7 @@ followup: larget subarray sum with at most k elements
 [0236 lowest common ancestor of a binary tree](https://github.com/corykingsf/hack-interview-handbook/blob/main/%E6%A0%91/236.lca.md)  
 [0239 滑动窗口最大值](https://github.com/corykingsf/hack-interview-handbook/blob/main/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/lc.239.%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC.md)  
 [0283 move zeros](https://github.com/corykingsf/hack-interview-handbook/blob/main/array/lc.283.move_zeroes.md)  ``双指针``  
-[0279 perfect squares]  
+[0279 perfect squares](https://github.com/corykingsf/hack-interview-handbook/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/lc279.prefect_squares.md)  
 [0297 二叉树的序列化与反序列化](https://github.com/corykingsf/hack-interview-handbook/blob/main/%E6%A0%91/lc297.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.md)  
 [0300 longest increasing subsequence](https://github.com/corykingsf/hack-interview-handbook/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/lc300.longest_increasing_subsequence.md)  
 
