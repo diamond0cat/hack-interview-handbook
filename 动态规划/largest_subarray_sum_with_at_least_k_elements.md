@@ -19,6 +19,12 @@ Asked in : Facebook
 ```
 
 
+method 1:DP
+
+dp state:
+
+induction rule:
+
 
 ```java
 public‌ ‌class‌ ‌Solution‌ ‌{‌ ‌
