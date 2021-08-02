@@ -1,5 +1,19 @@
 
 
+
+how to model input?  
+
+weight -->uniform  how?
+
+40+30+20+10 = 100
+
+binary search不是最直接的方法，最直接的方法是new一个长度是total weight的数组，
+00-39放a
+40-69 放b
+
+
+
+![20210801140118](https://i.loli.net/2021/08/02/1cdLGIur2ZQ6CHe.png)
 ```java
 class‌ ‌RandomGenerator‌ ‌{‌ ‌
     private‌ ‌int[]‌ ‌ranges;‌ ‌
