@@ -1,18 +1,14 @@
-
-
-
-
-1.Tell me about yourself.
-What the hiring manager really wants is a quick, two- to three-minute snapshot of who you are
+* 1.Tell me about yourself.
+* What the hiring manager really wants is a quick, two- to three-minute snapshot of who you are
 and why you’ re the best candidate for this position.
-So as you answer this question, talk about what you’ ve done to prepare yourself to be the very
+* So as you answer this question, talk about what you’ ve done to prepare yourself to be the very
 best candidate for the position. Use an example or two to back it up. Then ask if they would like
-more details. If they do, keep giving them example after example of your background and. 1point3acres
+more details. If they do, keep giving them example after example of your background and
 experience. Always point back to an example when you have the opportunity.
-“ Tell me about yourself” does not mean tell me everything. Just tell me what makes you the
+* “ Tell me about yourself” does not mean tell me everything. Just tell me what makes you the
 best.
-sample answer:
-I have been working in the field of civil engineering for the past 6 years. My most recent
+* sample answer:
+* I have been working in the field of civil engineering for the past 6 years. My most recent
 experience has been with an engineering consulting firm where I’ ve worked for the last 2 years. I
 enjoy my job because it’ s challenging and I like interacting with a variety of people. In my most
 recent assignment I was on a project that lasted nine months. I made a significant contribution to
