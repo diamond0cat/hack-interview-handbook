@@ -38,62 +38,57 @@ public class Solution {
      */
     public String prefixNotationToPostfixNotation(String str) {
         String[] tokens = str.split(" ");
-        
         // 建立表达式树
         TreeNode expressionTree = buildTree(tokens);
-        
-        // 获得表达式树的后序遍历
-        List<String> postfixNotation = new ArrayList<>();
-        
-        postOrderTravel(expressionTree, postfixNotation);
-        
-        StringBuffer result = new StringBuffer();
-        for (int i = 0; i < postfixNotation.size(); i++) {
-            if (i > 0) {
-                result.append(" ");
-            }
-            result.append(postfixNotation.get(i));
+
+        //获得表达式树的后序遍历
+        List<String> postfix = new ArrayList<>();
+        postOrderTraverse(expressionTree, postfix);
+
+        // convert list to string
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < postfix.size(); i++) {
+            if (i > 0) result.append(" ");
+            result.append(postfix.get(i));
         }
         return result.toString();
     }
-    private boolean isOperation(String s) {
+    private boolean isOperator(String s) {
         return "+-*/".indexOf(s) != -1;
     }
-    private TreeNode buildTree(String[] tokens) {
-        Stack<TreeNode> nodeStack = new Stack<>();
+    private void postOrderTraverse(TreeNode root, List<String> postfix) {
+        if (root == null) return;
+        postOrderTraverse(root.left, postfix);
+        postOrderTraverse(root.right, postfix);
+        postfix.add(root.val);
+    }
+    public TreeNode buildTree(String[] tokens) {
+        Deque<TreeNode> nodeStack = new ArrayDeque<>();
         // 倒序遍历前缀表达式构造表达式树
         for (int i = tokens.length - 1; i >= 0; i--) {
             TreeNode node = new TreeNode(tokens[i]);
-            if (isOperation(tokens[i])) {
-                // 如果是操作符，取出栈中的两个元素，作为当前节点的子节点
+            if (isOperator(tokens[i])) {  //如果是操作符,取出栈中的两个元素，作为当前元素的子节点
                 node.left = nodeStack.pop();
                 node.right = nodeStack.pop();
                 // 并将这个节点压入栈中
                 nodeStack.push(node);
-            }
-            else {
-                // 如果是变量，直接压入栈中
-                nodeStack.push(node);
+
+            } else {   //如果是操作数,直接压栈
+                nodeStack.offerFirst(node);
             }
         }
         return nodeStack.peek();
     }
-    private void postOrderTravel(TreeNode root, List<String> postfixNotation) {
-        if (root == null) {
-            return;
+
+    class TreeNode {
+         String val;
+         TreeNode left, right;
+         TreeNode(String s) {
+            this.val = s;
+            this.left = this.right = null;
         }
-        postOrderTravel(root.left, postfixNotation);
-        postOrderTravel(root.right, postfixNotation);
-        postfixNotation.add(root.val);
     }
 }
 
-class TreeNode {
-    public String val;
-    public TreeNode left, right;
-    public TreeNode(String s) {
-        this.val = s;
-        this.left = this.right = null;
-    }
-}
+
 ```
