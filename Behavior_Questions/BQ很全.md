@@ -1,4 +1,4 @@
-* 1.Tell me about yourself.
+### 1.Tell me about yourself.
 * What the hiring manager really wants is a quick, two- to three-minute snapshot of who you are
 and why you’ re the best candidate for this position.
 * So as you answer this question, talk about what you’ ve done to prepare yourself to be the very
