@@ -23,7 +23,7 @@ public class SingleSourcePath {
         for(int i = 0; i < pre.length; i ++)
             pre[i] = -1;   //-1的物理意义：没有前驱
 
-        bfs(s);
+        bfs(s);  //只用调用一次bfs,因为只用求从source能到达的节点
     }
 
     private void bfs(int s){
@@ -44,6 +44,7 @@ public class SingleSourcePath {
         }
     }
 
+    //从source节点能否到达t
     public boolean isConnectedTo(int t){
         G.validateVertex(t);
         return visited[t];
