@@ -1,0 +1,111 @@
+
+二分图：图中的顶点可以分成不相交的两部分
+
+DFS染色来解决
+
+所有的边的两个端点隶属不同的部分
+
+二分图又称作二部图，是图论中的一种特殊模型。 设G=(V,E)是一个无向图，如果顶点V可分割为两个互不相交的子集(A,B)，并且图中的每条边（i，j）所关联的两个顶点i和j分别属于这两个不同的顶点集(i in A,j in B)，则称图G为一个二分图。
+
+
+
+```java
+    public boolean isBipartite(int[][] graph) {
+        
+        // sanity
+        int n = graph.length;
+        boolean[] visited = new boolean[n];
+        int[] colors = new int[n];
+        // given adjacency list
+        
+        // use dfs to check bipartite
+        for (int i = 0; i < n; i++ ) {
+           // check each connected component
+            if (!visited[i]) {
+                if (!dfs(i, visited, 0, colors, graph)) return false;
+                
+            }
+        }
+        return true;
+        
+    }
+    private boolean dfs(int i, boolean[] visited, int color, int[] colors, int[][] graph) {
+        
+        visited[i] = true;
+        colors[i] = color;
+        
+        for (int w : graph[i]) { // check i's neighbors
+            if (!visited[w]) {
+                 if (!dfs(w, visited, 1 - color, colors, graph)) return false;
+            } else if (colors[w] == colors[i]) {
+                return false;
+            }
+            
+        }
+        return true;
+    }
+```
+
+```java
+import java.util.ArrayList;
+
+public class BipartitionDetection {
+
+    private Graph G;
+
+    private boolean[] visited;
+    private int[] colors;
+    private boolean isBipartite = true;
+
+    public BipartitionDetection(Graph G){
+
+        this.G = G;
+        visited = new boolean[G.V()];
+        colors = new int[G.V()];
+        for(int i = 0; i < G.V(); i ++)
+            colors[i] = -1;
+
+        for(int v = 0; v < G.V(); v ++)  //检测所有的连通分量
+            if(!visited[v])
+                if(!dfs(v, 0)){
+                    isBipartite = false;
+                    break;
+                }
+    }
+
+    private boolean dfs(int v, int color){   
+   
+        visited[v] = true;
+        colors[v] = color;
+        for(int w: G.adj(v))
+            if(!visited[w]){
+                if(!dfs(w, 1 - color)) return false;
+            }  else if(colors[w] == colors[v])
+                return false;
+        return true;
+    }
+
+    public boolean isBipartite(){
+        return isBipartite;
+    }
+
+    public static void main(String[] args){
+
+        Graph g = new Graph("g.txt");
+        BipartitionDetection bipartitionDetection = new BipartitionDetection(g);
+        System.out.println(bipartitionDetection.isBipartite);
+        // true
+
+        Graph g2 = new Graph("g2.txt");
+        BipartitionDetection bipartitionDetection2 = new BipartitionDetection(g2);
+        System.out.println(bipartitionDetection2.isBipartite);
+        // false
+
+        Graph g3 = new Graph("g3.txt");
+        BipartitionDetection bipartitionDetection3 = new BipartitionDetection(g3);
+        System.out.println(bipartitionDetection3.isBipartite);
+        // true
+    }
+}
+
+```
