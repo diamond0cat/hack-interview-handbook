@@ -22,5 +22,5 @@
 
 图的遍历树: bfs遍历树，dfs遍历树
 
-dfs遍历树：
-![20210822102931](https://i.loli.net/2021/08/23/DAzw4hkpaqLnZum.png)
+dfs遍历树：前向边和后向边
+![20210822103210](https://i.loli.net/2021/08/23/2dw6zTQ7FvNUI3J.png)
