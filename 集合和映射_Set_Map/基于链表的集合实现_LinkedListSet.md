@@ -1,0 +1,1 @@
+BST和linkedlist都属于动态数据结构
