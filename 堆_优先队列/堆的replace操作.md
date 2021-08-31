@@ -1,5 +1,12 @@
+replace:  取出最大元素，放入一个新元素
+
+实现：可以先extractMax, 再add,两次logn操作
+
+实现：可以直接将堆顶元素替换以后shift down, 一次logn操作
+
+
 ```java
- public class MaxHeap<E extends Comparable<E>> {
+public class MaxHeap<E extends Comparable<E>> {
 
     private Array<E> data;
 
@@ -81,18 +88,18 @@
 
     private void siftDown(int k){
 
-        while(leftChild(k) < data.getSize()){ //k还有孩子的情况
+        while(leftChild(k) < data.getSize()){
             int j = leftChild(k); // 在此轮循环中,data[k]和data[j]交换位置
             if( j + 1 < data.getSize() &&
-                    data.get(j + 1).compareTo(data.get(j)) > 0 )  //如果左孩子的值小于右孩子的值
-                j ++;  //j指到右孩子 等价于 j = rightChild(k)
+                    data.get(j + 1).compareTo(data.get(j)) > 0 )
+                j ++;
             // data[j] 是 leftChild 和 rightChild 中的最大值
 
-            if(data.get(k).compareTo(data.get(j)) >= 0 ) //k比j大，不用继续了，k比它的左右两个孩子都大
+            if(data.get(k).compareTo(data.get(j)) >= 0 )
                 break;
 
-            data.swap(k, j);  //否则把k跟他的孩子交换
-            k = j;  //k指向新的位置，继续下沉
+            data.swap(k, j);
+            k = j;
         }
     }
 
