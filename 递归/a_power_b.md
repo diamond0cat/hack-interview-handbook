@@ -11,6 +11,10 @@ a<0 b<0
 
 a==0 b==0
 
+先把edge case写出来，体现能考虑到edge case
+
+
+
 
 ```java
 class Solution {

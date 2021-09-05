@@ -5,6 +5,14 @@ Examples
 L = 2 -> 4 -> 3 -> 5 -> 1 -> null, T = 3, is partitioned to 2 -> 1 -> 4 -> 3 -> 5 -> null
 
 
+* solution 1: 
+  * step 1: allocate two new dummy heads
+  * step 2: iteratate over the list, for each element, compare it with the target:
+    * if cur.val < target, append to the dummySmall
+    * if cur.val >= target, append to the dummyLarge
+
+
+
 ```java
   public ListNode partition(ListNode head, int target) {
  
@@ -23,7 +31,7 @@ L = 2 -> 4 -> 3 -> 5 -> 1 -> null, T = 3, is partitioned to 2 -> 1 -> 4 -> 3 -> 
       }
       head = head.next;
     }
-    largeTail.next = null;
+    largeTail.next = null;//断开
     smallTail.next = dummyLargeHead.next;
     return dummySmallHead.next;
   }

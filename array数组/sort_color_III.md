@@ -1,3 +1,6 @@
+rainbow只有三个color比较好做，多了的话建议用counting sort或bucket sort,
+或者用递归一层一层的剥
+
 
 使用分治法来解决。
 传入两个区间，一个是颜色区间 color_from, color_to。另外一个是待排序的数组区间 index_from, index_to.
