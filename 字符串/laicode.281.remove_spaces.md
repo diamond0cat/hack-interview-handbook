@@ -20,10 +20,12 @@ public class Solution {
      }
      charArr[slow++] = charArr[fast];
     }
-    if (slow > 0 && charArr[slow - 1] == ' ') {
+    if (slow > 0 && charArr[slow - 1] == ' ') { //post-processing: 如果slow-1等于空格,slow--，把![picture 5](https://i.loli.net/2021/09/08/V1rXY9Z4ycSpJ2L.png)  
+
       slow--;
     }
     return new String(charArr, 0, slow);
   }
 }
 ```
+![picture 6](https://i.loli.net/2021/09/08/V1rXY9Z4ycSpJ2L.png)  
