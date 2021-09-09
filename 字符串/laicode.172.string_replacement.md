@@ -29,11 +29,16 @@ public class Solution {
     return new String(arr, 0, slow);
   }
   
+  /**
+  s: a[s+1.....]the characters that have been processed and should be kept
+  f : the character being processed
+
+  */
   private String replaceLonger(char[] input, String s, String t) {
      // pre-compute
-     List<Integer> matchIdx = getMatchEndIdx(input, s);
-     char[] result = new char[input.length + matchIdx.size() * (t.length() - s.length())];
-     int lastIndex = matchIdx.size() - 1;
+     List<Integer> matchIdx = getMatchEndIdx(input, s);  //找出匹配的子串的总数
+     char[] result = new char[input.length + matchIdx.size() * (t.length() - s.length())];  //分配多余的空间
+     int lastIndex = matchIdx.size() - 1;  //index从后往前开始填字符
      int slow = input.length - 1;
      int fast = result.length - 1;
      while (slow >= 0) {
