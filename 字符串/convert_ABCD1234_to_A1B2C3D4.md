@@ -33,7 +33,7 @@ public class ShuffleString {
     }
     private static void convert(char[] a, int left, int right) {
         // base case
-        if (right - left <= 1) return;
+        if (right - left <= 1) return;  // right-left+1 <= 2
 
         int size = right - left +1;
         int mid = left + size / 2;
