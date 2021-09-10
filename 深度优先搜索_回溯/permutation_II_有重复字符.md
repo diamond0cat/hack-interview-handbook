@@ -1,4 +1,5 @@
-
+SC = O(n^2)
+TC = O(n!)
 
 ```java
 class Solution {
