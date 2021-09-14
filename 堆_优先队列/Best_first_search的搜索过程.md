@@ -1,0 +1,11 @@
+
+- Best first search的搜索过程：
+  - 1. init sate: A[0] + B[0]   <i, j>
+  - 2. expansion / generation rule:
+    - a. expand A[i] + B[i]
+      - i. generate A[i + 1] + B[j]
+      - ii. generate A[i] + B[j + 1]
+  - 3.termination condition:
+    - a.when we pop the k-th times
+  - 4. deduplication
+    - a.same state can be generated more than once. 

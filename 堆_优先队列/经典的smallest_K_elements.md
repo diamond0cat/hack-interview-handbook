@@ -1,5 +1,8 @@
 
-solution 1:  heap
+
+
+
+solution 1:  heap  (minheap or maxheap)
 ![picture 1](https://i.loli.net/2021/09/06/OIAFvWYVe7z5p4H.png)  
 
 solution 2: quick select
@@ -8,3 +11,8 @@ solution 2: quick select
 
 ![picture 2](https://i.loli.net/2021/09/06/JlF64q2fxYtTLXc.png)  
 ![picture 3](https://i.loli.net/2021/09/06/AmVitXsH6BZaNfr.png)  
+
+
+solution 3: sort
+
+
