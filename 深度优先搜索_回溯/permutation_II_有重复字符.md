@@ -1,6 +1,14 @@
 SC = O(n^2)
 TC = O(n!)
 
+
+怎么去重? dedup是针对当前这个node往下所有的分支来做的，每一个node对应一个recursion call
+
+
+
+![picture 12](https://i.loli.net/2021/09/15/rIme5j9wFW2QhME.png)  
+
+
 ```java
 class Solution {
     public List<List<Integer>> permuteUnique(int[] nums) {
