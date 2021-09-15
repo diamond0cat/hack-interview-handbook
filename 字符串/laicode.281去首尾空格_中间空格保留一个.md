@@ -20,8 +20,7 @@ public class Solution {
      }
      charArr[slow++] = charArr[fast];
     }
-    if (slow > 0 && charArr[slow - 1] == ' ') { //post-processing: 如果slow-1等于空格,slow--，把![picture 5](https://i.loli.net/2021/09/08/V1rXY9Z4ycSpJ2L.png)  
-
+    if (slow > 0 && charArr[slow - 1] == ' ') { //post-processing: 如果slow-1等于空格,slow--，把
       slow--;
     }
     return new String(charArr, 0, slow);
@@ -29,3 +28,6 @@ public class Solution {
 }
 ```
 ![picture 6](https://i.loli.net/2021/09/08/V1rXY9Z4ycSpJ2L.png)  
+
+
+![picture 5](https://i.loli.net/2021/09/08/V1rXY9Z4ycSpJ2L.png)  

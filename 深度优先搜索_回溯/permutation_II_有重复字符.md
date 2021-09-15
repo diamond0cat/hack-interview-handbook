@@ -1,5 +1,7 @@
-SC = O(n^2)
-TC = O(n!)
+SC = O(n^2) 每个节点上的hashset使用的空间加起来
+TC = O(n!)  最后一层一共n!个叶子，每个叶子里花n的时间打印
+
+
 
 
 怎么去重? dedup是针对当前这个node往下所有的分支来做的，每一个node对应一个recursion call
@@ -29,7 +31,7 @@ class Solution {
                 cur.add(nums[i]);
             }
             result.add(cur);
-            return;
+           // return;  这个return可以不写，这里implicitely return
         }
         HashSet<Integer> used = new HashSet<>();
         for (int i = index; i < nums.length; i++){  // 容易错的地方
