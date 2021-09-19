@@ -142,7 +142,42 @@ else if (temp.key > sample.key) {
 }
 
 
+```java
+public class Solution {
+  private final int k;
+  private int count;
+  private List<Integer> sample;
+  
+  public Solution(int k) {
+    // Complete the constructor if necessary.
+    if (k < 0) {
+      throw new IllegalArgumentException("k must be > 0");
+    }
+    this.k = k;
+    this.count = 0;
+    sample = new ArrayList<Integer>();
+  }
+  
+  public void read(int value) {
+    // Write your implementation here.
+    count++;
+    if (count <= k) {
+      sample.add(value);
+    } else {
+      int random = (int)(Math.random() * count);
+      if (random < k) {
+        sample.set(random, value);
+      }
+    }
+  }
+  
+  public List<Integer> sample() {
+    // Write your implementation here.
+    return sample;
+  }
+}
 
+```
 
 
 
