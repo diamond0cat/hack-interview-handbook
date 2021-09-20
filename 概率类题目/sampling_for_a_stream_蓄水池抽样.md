@@ -1,4 +1,6 @@
 
+an algorithm called Reservoir sampling which is a family of randomized algorithms for sampling from a population of unknown size.
+
 
 ```
 Consider an unlimited flow of data elements. How do you sample one element from this flow, such that at any point during the processing of the flow, you can return a random element from the n elements read so far.
