@@ -1,4 +1,24 @@
+物理意义：
+ max heap: the smaller half
+ min heap: the larger half
 
+property #1: max(max heap) <= min(min heap)
+property #2: 
+  size(max heap) == size(min heap)
+  size(max heap) = size(min heap) + 1
+
+
+algorithM
+intiialize; min heap={} max heap={}
+for each step(x):
+  - case 1: x <= max(max heap) max_heap.insert(x)
+    - if size(max_heap)  > size(min_heap) + 1
+      - int y = max_heap.pop_max()
+      - min_heap.insert(y)
+  - case 2: x > max(min heap) , min_heap.insert(x)
+    - if size(max_heap) < size(min_heap)
+      - int y = min_heap.pop_min()
+        - max.heap.insert(y)
 
 ```java
 public class Solution {
@@ -42,3 +62,7 @@ public class Solution {
   }
 }
 ``
+
+
+### follow-up:
+  - 数据量很大，内存存不下

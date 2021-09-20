@@ -8,6 +8,10 @@ Given a random generator RandomFive.random5(), the return value of RandomFive.ra
 舍弃尾巴, mod1000 就是所得.
 ```
 
+- random1048576() 
+
+- 2^20 = 1048576
+
 ```java
 public class Solution {
 	public int random1000() {
