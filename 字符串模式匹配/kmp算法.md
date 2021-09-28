@@ -43,7 +43,7 @@ public:
         for (int i = 1, j = 0; i <= n; i ++ ) {
             while (j && s[i] != p[j + 1]) j = next[j];
             if (s[i] == p[j + 1]) j ++ ;
-            if (j == m) return i - m;
+            if (j == m) return i - m;  //终点是i,长度是m,所以起点是 i- m + 1，但因为我们存下标的时候往后错了一位，所以还要-1, i-m+1-1
         }
 
         return -1;
