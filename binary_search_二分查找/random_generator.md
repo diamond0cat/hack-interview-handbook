@@ -1,5 +1,6 @@
 
-
+Random generator
+-
 
 how to model input?  
 
@@ -51,3 +52,9 @@ class‌ ‌RandomGenerator‌ ‌{‌ ‌
 }‌ ‌
  ‌
 ```
+
+
+Random generator II
+-
+
+
