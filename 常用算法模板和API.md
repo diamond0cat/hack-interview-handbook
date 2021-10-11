@@ -1,4 +1,10 @@
-- Rabin-karp是一种基于hash的高效的字符串搜索算法
+
+
+
+
+Rabin-karp (字符串哈希)是一种基于hash的高效的字符串搜索算法
+- 
+
   - time = O(m + n)
   - 把字符串哈希当成一个筛选，如果match上hash，再做一次傻傻的比较，把字符串哈希当成一个screening筛选
 
@@ -97,7 +103,8 @@ class Solution {
 ```
 
 
-### KMP模板
+KMP模板
+-
 
 - next告诉我们：如果匹配失败了， 下一步调到哪里继续配
 
