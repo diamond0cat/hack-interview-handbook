@@ -94,6 +94,79 @@ public class Solution {
 }
  ```
 
+Heap sort模板
+-
+
+```java
+// time = O(nlogn)这是时间复杂度，不是运行时间  space = O(1) non-stable
+//每一步都是logn的，repeat n次
+public class Heapsort {
+    public static void main(String[] args) {
+        int[] test = new int[]{1, 5, -1, -9, 19};
+
+        Heapsort hs = new Heapsort();
+        hs.heapSort(test);
+
+        for (int num :test) {
+            System.out.print(num + " ");
+        }
+    }
+    public void heapSort(int[] arr) {
+        // sanity check
+        if (arr == null ||arr.length == 0) return;
+
+        // step 1:heapify
+        heapify(arr);
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        // step 2:
+        for (int size = arr.length; size >1; size--) {
+            swap(arr, 0, size - 1);  //每次都把最大的元素交换到最后的位置,然后在前半部分做heap sort,后半部分放sort好的元素，从最后一个元素一个一个的摆
+            shiftDown(arr, 0, size - 1);  //size表示图中的那个虚的隔板，对0..size-1的那部分继续sort
+        }
+    }
+    private void heapify(int[] arr) {
+        for (int i = arr.length / 2 - 1; i >= 0; i--) {  //这里index是从0开始的，所以最后一个非叶子节点是index2-1
+            shiftDown(arr, i, arr.length);
+        }
+    }
+    private void shiftDown(int[] arr, int index, int len) {
+        while (index <len) {
+            int max = index;
+
+            int left = index * 2 +1;
+            int right = index * 2 +2;
+            // find the maximum of left and right
+            if (left <len && arr[left] > arr[max]) {  //先看左孩子
+                max = left;
+            }
+            if (right < len && arr[right] > arr[max]) { //如果有右孩子看右孩子
+                max = right;
+            }
+            // check if it is cur itself
+            if (max == index) break;
+            swap(arr, index, max);
+            index = max;
+        }
+    }
+    private void swap(int[] arr, int a, int b) {
+        int tmp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = tmp;
+    }
+}
+
+```
+
+
+Quick select模板
+-
+
+
+
+
 整数二分模板
 -
 
@@ -119,12 +192,60 @@ public class Solution {
 -
 
 
-双指针模板
+### 双指针模板
+
+two sum模板
 -
+
+
+two diff模板
+-
+
+
+cyclic swapping模板
+-
+```java
+class Solution {
+    public int firstMissingPositive(int[] nums) {
+        // O(n) time, O(1) space
+        // cyclic swaping
+        // 根据题目的要求，只能原地swap,这个只能修改original input
+        for (int i = 0; i < nums.length; i++) {
+          // nums[i] = i +1的时候就不用swap了
+          // nums[i]必须在我们的search range里
+          // 去重，如果元素相同了就不用swap下去了
+            while (nums[i] != i +1 && nums[i] > 0 && nums[i] <= nums.length && nums[i] != nums[nums[i] - 1] ) {
+                swap(nums, i, nums[i] - 1);
+            }
+        }
+        
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != i + 1) return i + 1;
+        }
+        
+        return nums.length + 1;  //如果扫完一遍没有发现missing的，那么missing的就是最后一个
+    }
+    private void swap(int[] a, int i1, int i2) {
+        int tmp = a[i1];
+        a[i1] = a[i2];
+        a[i2] = tmp;
+    }
+}
+
+```
+
 
 
 区间合并模板
 -
+
+树与图的存储
+-
+
+
+滑动窗口模板
+-
+
 
 
 
