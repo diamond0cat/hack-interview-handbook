@@ -12,7 +12,6 @@ public class Solution {
     private void quickSort(int[] array, int left, int right) {
       if (left >= right) return;
       int pivotIndex = partition(array, left, right); // i <= pivotIndex ==> valu <= pivot, 
-
       quickSort(array, left, pivotIndex - 1);
       quickSort(array, pivotIndex + 1, right);
     }
@@ -20,12 +19,9 @@ public class Solution {
     private int partition(int[] array, int left, int right) {
       int randomIndex = pickRandom(left, right);
       int pivot = array[randomIndex];
-
       swap(array, randomIndex, right);
-
       int leftIndex = left;
       int rightIndex = right- 1;
-
       while (leftIndex <= rightIndex) {
          if (array[leftIndex] <= pivot) {
            leftIndex++;
