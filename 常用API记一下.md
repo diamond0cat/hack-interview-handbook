@@ -7,3 +7,9 @@
 - 字符串API:
   - equals()
   - equalsIgnoreCase()
+
+
+Integer相关API
+-
+
+- Integer.toBinaryString(-5);
