@@ -1,6 +1,8 @@
 
 ![picture 1](https://i.loli.net/2021/10/14/Ud7ehzLHauskMIj.png)  
 ![picture 2](https://i.loli.net/2021/10/14/U71v39NwcCHZEQl.png)  
+
+
 - solution 1: brute force O(n^6)
     - there are O(n^4) submatrices
         - for for for for each submatrix, it takes O(n^2) to calculate its sum.
@@ -26,7 +28,6 @@ for x1
             for y2
                 int sum = 0;
                 for y = y1; y <= y2; y++:
-
                     // x1 == 0 小心处理越界
                     sum += prefixSum[x2][y] - prefixSum[x1 -1][y]
                 global_max = max(global_max， sum);    
