@@ -35,9 +35,6 @@ for x1
     - O(n^5)
 
 
-- solution 3: dp: prefix sum in 2D  ==> O(n^4)
-
-
 ```java
 public class Solution {
   public int largest(int[][] matrix) {
@@ -75,3 +72,14 @@ public class Solution {
 }
 
 ```
+
+- solution 3: dp: prefix sum in 2D  ==> O(n^4)
+
+- for x1
+  - for y1
+    - for x2
+      - for y2
+      - // 枚举左上角和右下角，O（1）的时间把子矩阵的矩阵和求出来
+
+![picture 1](https://i.loli.net/2021/10/14/BY2EnDb6ysd7uO4.png)  
+
