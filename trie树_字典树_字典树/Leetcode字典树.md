@@ -141,3 +141,46 @@ leetcode上49道关于trie的题
 |      | 剑指 Offer II 065. 最短的单词编码    | 61.9%  | 中等 |          |     |
 |      | 剑指 Offer II 066. 单词之和          | 62.7%  | 中等 |          |     |
 |      | 剑指 Offer II 067. 最大的异或        | 63.2%  | 中等 |          |     |
+
+
+|   | # | Title | Acceptance | Difficulty | Frequency |
+| --- | --- | --- | --- | --- | --- |
+|  | 139 | Word Break | 43.2% | Medium |  |
+|  | 140 | Word Break II | 39.0% | Hard |  |
+|  | 208 | Implement Trie (Prefix Tree) | 55.7% | Medium |  |
+|  | 211 | Design Add and Search Words Data Structure | 42.4% | Medium |  |
+|  | 212 | Word Search II | 38.4% | Hard |  |
+|  | 336 | Palindrome Pairs | 36.2% | Hard |  |
+|  | 386 | Lexicographical Numbers | 56.8% | Medium |  |
+|  | 421 | Maximum XOR of Two Numbers in an Array | 55.0% | Medium |  |
+|  | 425 | Word Squares | 51.2% | Hard |  |
+|  | 440 | K-th Smallest in Lexicographical Order | 30.2% | Hard |  |
+|  | 472 | Concatenated Words | 43.1% | Hard |  |
+|  | 527 | Word Abbreviation | 57.2% | Hard |  |
+|  | 588 | Design In-Memory File System | 47.4% | Hard |  |
+|  | 616 | Add Bold Tag in String | 46.2% | Medium |  |
+|  | 642 | Design Search Autocomplete System | 47.6% | Hard |  |
+|  | 648 | Replace Words | 60.8% | Medium |  |
+|  | 676 | Implement Magic Dictionary | 56.1% | Medium |  |
+|  | 677 | Map Sum Pairs | 56.9% | Medium |  |
+|  | 692 | Top K Frequent Words | 53.8% | Medium |  |
+|  | 720 | Longest Word in Dictionary | 50.2% | Medium |  |
+|  | 745 | Prefix and Suffix Search | 35.5% | Hard |  |
+|  | 758 | Bold Words in String | 49.2% | Medium |  |
+|  | 792 | Number of Matching Subsequences | 49.6% | Medium |  |
+|  | 820 | Short Encoding of Words | 55.1% | Medium |  |
+|  | 1065 | Index Pairs of a String | 61.4% | Easy |  |
+|  | 1023 | Camelcase Matching | 58.3% | Medium |  |
+|  | 1032 | Stream of Characters | 48.8% | Hard |  |
+|  | 1166 | Design File System | 59.4% | Medium |  |
+|  | 1316 | Distinct Echo Substrings | 49.9% | Hard |  |
+|  | 1178 | Number of Valid Words for Each Puzzle | 41.0% | Hard |  |
+|  | 1233 | Remove Sub-Folders from the Filesystem | 64.3% | Medium |  |
+|  | 1268 | Search Suggestions System | 65.7% | Medium |  |
+|  | 1707 | Maximum XOR With an Element From Array | 42.6% | Hard |  |
+|  | 1698 | Number of Distinct Substrings in a String | 61.4% | Medium |  |
+|  | 1803 | Count Pairs With XOR in a Range | 45.6% | Hard |  |
+|  | 1804 | Implement Trie II (Prefix Tree) | 58.4% | Medium |  |
+|  | 1858 | Longest Word With All Prefixes | 65.7% | Medium |  |
+|  | 1938 | Maximum Genetic Difference Query | 38.3% | Hard |  |
+|  | 1948 | Delete Duplicate Folders in System | 60.2% | Hard |  |

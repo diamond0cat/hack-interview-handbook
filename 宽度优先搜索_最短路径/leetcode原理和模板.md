@@ -1,6 +1,8 @@
 ![picture 1](https://i.loli.net/2021/09/25/Xrd3OM9Ltf8NRFP.png)  
 
+- 什么时候用dijkstra？每个点的边权不一样
 
+ 
 - 搜索的本质是枚举 
 - 当我们不知道循环次数时，会用到递归枚举
 
@@ -18,7 +20,7 @@
 
 
 - BFS记录的是节点在搜索树上的最小深度
-
+- 187 problems
 
 |   | # | Title | Acceptance | Difficulty | Frequency |
 | --- | --- | --- | --- | --- | --- |

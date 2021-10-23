@@ -401,55 +401,62 @@ public int find(int p) {
 - 其实写到这里，数组 rank 还是数组 size 的意义都不太重要了，我们只须要在 find 的时候，做好路径压缩，把孩子结点指向父亲结点即可。
 
 
-| 状态 | 题目                           | 通过率   | 难度 | 出现频率 |
-|----|------------------------------|-------|----|------|
-|    | 128. 最长连续序列                  | 54.3% | 中等 |      |
-|    | 130. 被围绕的区域                  | 44.4% | 中等 |      |
-|    | 200. 岛屿数量                    | 55.4% | 中等 |      |
-|    | 261. 以图判树                    | 49.5% | 中等 |      |
-|    | 305. 岛屿数量 II                 | 37.9% | 困难 |      |
-|    | 323. 无向图中连通分量的数目             | 63.2% | 中等 |      |
-|    | 399. 除法求值                    | 59.3% | 中等 |      |
-|    | 547. 省份数量                    | 61.8% | 中等 |      |
-|    | 684. 冗余连接                    | 66.6% | 中等 |      |
-|    | 685. 冗余连接 II                 | 43.2% | 困难 |      |
-|    | 694. 不同岛屿的数量                 | 53.1% | 中等 |      |
-|    | 695. 岛屿的最大面积                 | 66.3% | 中等 |      |
-|    | 711. 不同岛屿的数量 II              | 57.3% | 困难 |      |
-|    | 721. 账户合并                    | 46.9% | 中等 |      |
-|    | 737. 句子相似性 II                | 46.1% | 中等 |      |
-|    | 765. 情侣牵手                    | 66.5% | 困难 |      |
-|    | 778. 水位上升的泳池中游泳              | 59.6% | 困难 |      |
-|    | 785. 判断二分图                   | 51.2% | 中等 |      |
-|    | 803. 打砖块                     | 48.3% | 困难 |      |
-|    | 827. 最大人工岛                   | 39.1% | 困难 |      |
-|    | 839. 相似字符串组                  | 57.5% | 困难 |      |
-|    | 886. 可能的二分法                  | 42.4% | 中等 |      |
-|    | 924. 尽量减少恶意软件的传播             | 36.0% | 困难 |      |
-|    | 928. 尽量减少恶意软件的传播 II          | 42.0% | 困难 |      |
-|    | 947. 移除最多的同行或同列石头            | 61.3% | 中等 |      |
-|    | 952. 按公因数计算最大组件大小            | 35.0% | 困难 |      |
-|    | 959. 由斜杠划分区域                 | 74.3% | 中等 |      |
-|    | 990. 等式方程的可满足性               | 50.2% | 中等 |      |
-|    | 1061. 按字典序排列最小的等效字符串         | 60.2% | 中等 |      |
-|    | 1020. 飞地的数量                  | 53.6% | 中等 |      |
-|    | 1101. 彼此熟识的最早时间              | 66.9% | 中等 |      |
-|    | 1102. 得分最高的路径                | 36.8% | 中等 |      |
-|    | 1135. 最低成本联通所有城市             | 53.4% | 中等 |      |
-|    | 1168. 水资源分配优化                | 57.2% | 困难 |      |
-|    | 1258. 近义词句子                  | 55.9% | 中等 |      |
-|    | 1627. 带阈值的图连通性               | 37.9% | 困难 |      |
-|    | 1632. 矩阵转换后的秩                | 31.8% | 困难 |      |
-|    | 1361. 验证二叉树                  | 40.1% | 中等 |      |
-|    | 1202. 交换字符串中的元素              | 50.3% | 中等 |      |
-|    | 1254. 统计封闭岛屿的数目              | 59.8% | 中等 |      |
-|    | 1267. 统计参与通信的服务器             | 60.8% | 中等 |      |
-|    | 1319. 连通网络的操作次数              | 61.7% | 中等 |      |
-|    | 1391. 检查网格中是否存在有效路径          | 40.1% | 中等 |      |
-|    | 1489. 找到最小生成树里的关键边和伪关键边      | 69.2% | 困难 |      |
-|    | 1559. 二维网格图中探测环              | 36.7% | 困难 |      |
-|    | 1569. 将子数组重新排序得到同一个二叉查找树的方案数 | 47.2% | 困难 |      |
-|    | 1579. 保证图可完全遍历               | 62.0% | 困难 |      |
-|    | 1584. 连接所有点的最小费用             | 66.6% | 中等 |      |
-|    | 1631. 最小体力消耗路径               | 49.3% | 中等 |      |
-|    | 1697. 检查边长度限制的路径是否存在         | 52.6% | 困难 |      |
+-  56 problems
+|   | # | Title | Acceptance | Difficulty | Frequency |
+| --- | --- | --- | --- | --- | --- |
+|  | 128 | Longest Consecutive Sequence | 48.0% | Medium |  |
+|  | 130 | Surrounded Regions | 31.6% | Medium |  |
+|  | 200 | Number of Islands | 51.9% | Medium |  |
+|  | 261 | Graph Valid Tree | 44.6% | Medium |  |
+|  | 305 | Number of Islands II | 39.3% | Hard |  |
+|  | 323 | Number of Connected Components in an Undirected Graph | 59.7% | Medium |  |
+|  | 399 | Evaluate Division | 55.9% | Medium |  |
+|  | 547 | Number of Provinces | 62.1% | Medium |  |
+|  | 684 | Redundant Connection | 60.4% | Medium |  |
+|  | 685 | Redundant Connection II | 33.4% | Hard |  |
+|  | 694 | Number of Distinct Islands | 59.0% | Medium |  |
+|  | 695 | Max Area of Island | 67.9% | Medium |  |
+|  | 711 | Number of Distinct Islands II | 50.6% | Hard |  |
+|  | 721 | Accounts Merge | 54.1% | Medium |  |
+|  | 737 | Sentence Similarity II | 47.3% | Medium |  |
+|  | 765 | Couples Holding Hands | 56.1% | Hard |  |
+|  | 778 | Swim in Rising Water | 58.0% | Hard |  |
+|  | 785 | Is Graph Bipartite? | 49.5% | Medium |  |
+|  | 803 | Bricks Falling When Hit | 33.0% | Hard |  |
+|  | 827 | Making A Large Island | 44.2% | Hard |  |
+|  | 839 | Similar String Groups | 43.8% | Hard |  |
+|  | 886 | Possible Bipartition | 46.3% | Medium |  |
+|  | 924 | Minimize Malware Spread | 41.8% | Hard |  |
+|  | 928 | Minimize Malware Spread II | 41.8% | Hard |  |
+|  | 947 | Most Stones Removed with Same Row or Column | 56.2% | Medium |  |
+|  | 952 | Largest Component Size by Common Factor | 37.1% | Hard |  |
+|  | 959 | Regions Cut By Slashes | 68.2% | Medium |  |
+|  | 990 | Satisfiability of Equality Equations | 48.8% | Medium |  |
+|  | 1061 | Lexicographically Smallest Equivalent String | 67.6% | Medium |  |
+|  | 1020 | Number of Enclaves | 60.6% | Medium |  |
+|  | 1101 | The Earliest Moment When Everyone Become Friends | 64.7% | Medium |  |
+|  | 1102 | Path With Maximum Minimum Value | 51.6% | Medium |  |
+|  | 1135 | Connecting Cities With Minimum Cost | 60.2% | Medium |  |
+|  | 1168 | Optimize Water Distribution in a Village | 62.6% | Hard |  |
+|  | 1258 | Synonymous Sentences | 57.7% | Medium |  |
+|  | 1627 | Graph Connectivity With Threshold | 43.3% | Hard |  |
+|  | 1632 | Rank Transform of a Matrix | 40.6% | Hard |  |
+|  | 1361 | Validate Binary Tree Nodes | 42.1% | Medium |  |
+|  | 1202 | Smallest String With Swaps | 50.9% | Medium |  |
+|  | 1254 | Number of Closed Islands | 62.6% | Medium |  |
+|  | 1267 | Count Servers that Communicate | 57.9% | Medium |  |
+|  | 1319 | Number of Operations to Make Network Connected | 56.2% | Medium |  |
+|  | 1391 | Check if There is a Valid Path in a Grid | 46.3% | Medium |  |
+|  | 1489 | Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree | 51.7% | Hard |  |
+|  | 1559 | Detect Cycles in 2D Grid | 46.7% | Medium |  |
+|  | 1569 | Number of Ways to Reorder Array to Get Same BST | 49.8% | Hard |  |
+|  | 1579 | Remove Max Number of Edges to Keep Graph Fully Traversable | 48.9% | Hard |  |
+|  | 1584 | Min Cost to Connect All Points | 59.3% | Medium |  |
+|  | 1631 | Path With Minimum Effort | 50.9% | Medium |  |
+|  | 1697 | Checking Existence of Edge Length Limited Paths | 48.5% | Hard |  |
+|  | 1722 | Minimize Hamming Distance After Swap Operations | 46.6% | Medium |  |
+|  | 1724 | Checking Existence of Edge Length Limited Paths II | 55.5% | Hard |  |
+|  | 1905 | Count Sub Islands | 61.6% | Medium |  |
+|  | 1970 | Last Day Where You Can Still Cross | 47.8% | Hard |  |
+|  | 1998 | GCD Sort of an Array | 45.1% | Hard |  |
+|  | 2003 | Smallest Missing Genetic Value in Each Subtree | 40.4% | Hard |  |sx 
