@@ -32,7 +32,7 @@ Iterative:‌ ‌
             if‌ ‌(root.numLeft‌ ‌>=‌ ‌k)‌ ‌{‌ ‌
                 root‌ ‌=‌ ‌root.left;‌ ‌
             }‌ ‌else‌ ‌{‌ ‌
-                k‌ ‌=‌ ‌k‌ ‌-‌ ‌root.numLeft‌ ‌-‌ ‌1;‌ ‌
+                k‌ ‌=‌ ‌k‌ ‌-‌ ‌root.numLeft‌ ‌-‌ ‌1;‌ ‌  //向右边走之前把左边的个数和根节点减掉
                 root‌ ‌=‌ ‌root.right;‌ ‌
             }‌ ‌
         }‌ ‌
