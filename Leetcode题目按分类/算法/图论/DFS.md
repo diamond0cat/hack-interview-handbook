@@ -1,7 +1,6 @@
 
 
-![picture 16](https://i.loli.net/2021/10/17/WgymxiFuz6KI41T.png)  
-
+![20211031001047](https://raw.githubusercontent.com/corykingsf/hack-interview-handbook/main/image/20211031001047.png)
 
 
 | 题目 | 题解 | 难度 | 推荐指数 |
