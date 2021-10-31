@@ -3,7 +3,7 @@
 
 - two diff问题是最简单的sliding window
 - 
-- target > 0
+- target > 0 这个条件给出了，保证right肯定不会跑到left右边
 - 所有的变体：
 
 number of pairs == target
@@ -32,12 +32,14 @@ what if we have duplicates elements?  homework
 
 number of pairs > target
 -
-
-- 这个可以找right most i, such athat array[j] - array[i] > target  (找最后一个满足要求的)
-- 等价于找left most i, such that array[j] - array[i] <= target  (找第一个不满足要求的)
+- 如果固定j:
+  - 这个可以找right most i, such athat array[j] - array[i] > target  (找最后一个满足要求的)
+  - 等价于找left most i, such that array[j] - array[i] <= target  (找第一个不满足要求的)
 
 - 第一种判断方法
   - 找right most i, such athat array[j] - array[i] > target  (找最后一个满足要求的)
+
+// 下面这种写法corner  case比较多
 ```java
 // find the right most i , array[j]-array[i] > target
 
@@ -67,18 +69,18 @@ int left = 0;
 int right = 1;
 
 while (right < arr.length) {  // for each j
-  if (array[right] - array[left] <= target) {
+  if (array[right] - array[left] <= target) {  //如果array[right]-array[left]<=target,我们可以移动j了，同时count+=left, left不算进去
     count += left;
     right++;
   } else {
-    left++;
+    left++;     //left移到第一个<=target的位置为止
   }
 }
 return count;
 
 ```
 
-等价于
+等价于， 上面的写法相当于把里面那层的while拆出来了
 
 
 ```java
@@ -88,15 +90,44 @@ int left = 0;
 int right = 1;
 
 while (right < arr.length) {  // for each j
-  if (array[right] - array[left] <= target) {
-    count += left;
-    right++;
-  } else {
-    left++;
-  }
+  while (array[right] - array[left] > target) {
+     left++；
+  } 
+
+  // left = left most array[right]-array[left] <= target
+  count += left;
+  right++;
+  
 }
 return count;
 
 ```
 
-- number of pairs < target
+
+number of pairs > target
+-
+- 如果固定i, for each i:
+  - find the left most j such that array[j]-array[i] > target
+  
+```java
+while (i < array.length) {  //for each i
+  while (j < array.length && array[j]-array[i] <= target) {
+      j++;
+  }
+  count += arrray.lenght - j;
+  i++;
+}
+
+
+```
+
+
+
+number of pairs < target
+-
+
+
+
+the array is unsorted
+-
+
