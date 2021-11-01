@@ -114,7 +114,7 @@ while (i < array.length) {  //for each i
   while (j < array.length && array[j]-array[i] <= target) {
       j++;
   }
-  count += arrray.lenght - j;
+  count += arrray.length - j;
   i++;
 }
 
@@ -128,6 +128,10 @@ number of pairs < target
 
 
 
-the array is unsorted
+number of pairs == target, the array is unsorted
 -
 
+- 思路：怎么分解：
+  - for each j: 
+    - j前面所有的element里面有多少个满足 array[j] - array[i]== target 或者 array[j]-array[i] == -target
+      - 
