@@ -139,3 +139,40 @@ number of pairs == target, the array is unsorted
  - solution 1: use map
  - solution 2: sort then use two pointers,这个相当于前面题目的follow up
    - i和j停在相同元素group的最左边一个， 去重的时候停在相同元素group的最右边一个
+
+
+1 1 3 4 
+l   r
+
+- 相同元素都要算进去，这里算成4个pairs
+
+```java
+
+int‌ ‌count‌ ‌=‌ ‌0;‌ ‌
+int‌ ‌left‌ ‌=‌ ‌0;‌ ‌
+int‌ ‌right‌ ‌=‌ ‌1;‌ ‌
+while‌ ‌(right‌ ‌<‌ ‌array.length)‌ ‌{‌  ‌//‌ ‌for‌ ‌each‌ ‌j.‌ ‌  每次循环进来的时候，left和right停在相同元素group的最左边
+    if‌ ‌(array[left]‌ ‌+‌ ‌target‌ ‌==‌ ‌array[right])‌ ‌{‌ ‌ ‌//‌ ‌!!‌ ‌the‌ ‌leftmost‌ ‌element‌ ‌of‌ ‌the‌ ‌group‌ ‌of‌ ‌identical‌ ‌elements‌ ‌
+        //‌ ‌
+        int‌ ‌rcount‌ ‌=‌ ‌1;‌ ‌
+        int‌ ‌lcount‌ ‌=‌ ‌1;‌ ‌
+        while‌ ‌(right‌ ‌+‌ ‌1<‌ ‌array.length‌ ‌&&‌ ‌array[right‌ ‌+‌ ‌1]‌ ‌==‌ ‌array[right])‌ ‌{‌ ‌ //这里看的都是下一个， 停在相同元素gropu的最后一个 
+            right++;‌ ‌
+            rcount++;‌ ‌
+        }‌ ‌
+        while‌ ‌(left‌ ‌+‌ ‌1‌ ‌<‌ ‌array.length‌ ‌&&‌ ‌array[left‌ ‌+‌ ‌1]‌ ‌==‌ ‌array[left])‌ ‌{‌ ‌
+            left++;‌ ‌
+            lcount++;‌ ‌
+        }‌ ‌
+        count‌ ‌+=‌ ‌rcount‌ ‌*‌ ‌lcount;‌ ‌
+        left++;‌ ‌
+        right++;‌ ‌
+    }‌ ‌else‌ ‌if‌ ‌(array[left]‌ ‌+‌ ‌target‌ ‌<‌ ‌array[right])‌ ‌{‌ ‌
+        left++;‌ ‌
+    }‌ ‌else‌ ‌{‌ ‌
+        right++;‌ ‌
+   }‌ ‌
+}‌ ‌
+return‌ ‌count;‌ ‌
+
+```
