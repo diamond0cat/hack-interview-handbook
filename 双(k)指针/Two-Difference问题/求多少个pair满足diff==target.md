@@ -130,8 +130,12 @@ number of pairs < target
 
 number of pairs == target, the array is unsorted
 -
-
+- 这个题的解法跟leetcode 1 two sum的解法差不多，不过要注意有两种情况
 - 思路：怎么分解：
   - for each j: 
-    - j前面所有的element里面有多少个满足 array[j] - array[i]== target 或者 array[j]-array[i] == -target
-      - 
+    - j前面所有的element里面有多少个满足 array[j] - array[i]== target 或者 array[j]-array[i] == -target,注意input没有sort过，这里有两种可能：一个是target,一个是-target
+
+
+ - solution 1: use map
+ - solution 2: sort then use two pointers,这个相当于前面题目的follow up
+   - i和j停在相同元素group的最左边一个， 去重的时候停在相同元素group的最右边一个
