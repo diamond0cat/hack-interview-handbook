@@ -1,3 +1,35 @@
+- 子串匹配:
+  - 1. brute force
+
+```java
+
+  public int strstr(String large, String small) {
+    // write your solution here
+    if (large.length() < small.length()) {
+      return -1;
+    }
+
+    if (small.length() == 0) {
+      return 0;
+    }
+    int i, j;
+
+    // s[i, i + t.length() - 1]  ==> i + t.length() - 1 < s.length()
+    for (i = 0; i <= large.length() - small.length(); i++ ) {  
+      for (j = 0; j < small.length(); j++) {    //把j申明在了外面，因为除了循环要判断j是否==small.length
+      
+        if (large.charAt(i + j) != small.charAt(j)) {
+          break;
+        }
+      }
+      if (j == small.length()) {
+        return i;
+      }
+    }
+    return -1;
+
+```
+
 如果我们可以对字符串进行哈希，那么我们也可以对树、图这些结构进行哈希
 
 ![20210811165622](https://i.loli.net/2021/08/12/7x1zq5Zd9IW6Oan.png)
