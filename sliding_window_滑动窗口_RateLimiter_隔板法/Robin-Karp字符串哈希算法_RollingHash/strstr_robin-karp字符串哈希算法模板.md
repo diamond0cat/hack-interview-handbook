@@ -30,6 +30,53 @@
 
 ```
 
+
+```java
+class Solution {
+    private long MOD = (long)(1e9+7);  // 10^9+7 是一个质数
+    
+    public int strStr(String s, String t) {
+        if (t.length() == 0) return 0;
+        int n = s.length();
+        int m = t.length();
+        s = " " + s;
+        t = " " + t;
+
+        long tHash = 0;
+        for (int i = 1; i <= m; i++)
+            tHash = (tHash * 131 + (t.charAt(i) - 'a' + 1)) % MOD;  //a必须映射为1，不能映射为0,否则ab与aab的值就会算出一个值
+        // 模板：预处理前缀Hash
+        long[] sHash = new long[n + 1];  //1到n一共n个
+        sHash[0] = 0;
+        long[] p131 = new long[n + 1]; // 131的次幂
+        p131[0] = 1;
+        for (int i = 1; i <= n; i++) {
+            sHash[i] = (sHash[i - 1] * 131 + s.charAt(i) - 'a' + 1) % MOD;
+            p131[i] = p131[i - 1] * 131 % MOD;
+        }
+        // hello
+        // ll
+        for (int i = m; i <= n; i++) { // 滑动窗结尾
+            // s[i-m+1 ~ i] 与 t[1..m] 是否相等
+            if (calcHash(sHash, p131, i - m + 1, i) == tHash &&
+                s.substring(i - m + 1, i + 1).equals(t.substring(1))) {
+                return i - m; // 下标变回0开始
+            }
+        }
+        return -1;
+    }
+
+    // 模板：O(1)得到子串[l..r]的Hash值
+    private long calcHash(long[] H, long[] p131,  int l, int r) {
+        // hello 的子串ll的hash值
+        //  hell
+        // -he00
+        // =  ll
+        return ((H[r] - H[l - 1] * p131[r - l + 1]) % MOD + MOD) % MOD; //这里有负号，需要+p再模p,不取模这里会爆掉,这里其实不用专门存p131这个数组，直接把131的m次方算出来就可以
+    }
+}
+```
+
 如果我们可以对字符串进行哈希，那么我们也可以对树、图这些结构进行哈希
 
 ![20210811165622](https://i.loli.net/2021/08/12/7x1zq5Zd9IW6Oan.png)
