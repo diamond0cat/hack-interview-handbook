@@ -29,4 +29,31 @@ I could only think of Bruter Force approach.
 Please help. Thank you :)
 ```
 
+```java
+import java.util.*;
+
+public class Function {
+    String name;
+    List<String> argumentTypes;
+    boolean isVariadic;
+
+    public Function(String name, List<String> argumentTypes, boolean isVariadic) {
+        this.name = name;
+        this.argumentTypes = argumentTypes;
+        this.isVariadic = isVariadic;
+    }
+}
+
+class FunctionLibrary {
+    public void register(Set<Function> functionSet) {
+        // implement this method
+    }
+    public List<Function> findMatches(List<String> argumentTypes) {
+        // implement this method
+        return null;
+    }
+}
+
+```
+
 
