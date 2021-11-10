@@ -1,0 +1,3 @@
+- why interviewer ask this question:
+  - Answering this question will be a big positive signal to your interviews - being about to explain in detail a techinical challenge you faced to show that you are able to communicate effectively with other engineers.   ==> Good communication skills
+  - 

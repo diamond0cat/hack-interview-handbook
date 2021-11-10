@@ -1,4 +1,8 @@
+- Trie（发音类似 "try"）或者说 前缀树 是一种树形数据结构，用于高效地存储和检索字符串数据集中的键。这一数据结构有相当多的应用情景，例如自动补完和拼写检查。
 
+- 又叫「前缀树」或「字典树」）是一种用于快速查询「某个字符串/字符前缀」是否存在的数据结构。
+
+其核心是使用「边」来代表有无字符，使用「点」来记录是否为「单词结尾」以及「其后续字符串的字符是什么」。
 - trie, 前缀树，字典树都是同一个东西
 
 - trie是多叉树, 堆和线段树都是二叉树
@@ -184,3 +188,14 @@ leetcode上49道关于trie的题
 |  | 1858 | Longest Word With All Prefixes | 65.7% | Medium |  |
 |  | 1938 | Maximum Genetic Difference Query | 38.3% | Hard |  |
 |  | 1948 | Delete Duplicate Folders in System | 60.2% | Hard |  |
+
+
+| 题目 | 题解 | 难度 | 推荐指数 |
+| --- | --- | --- | --- |
+| 208. 实现 Trie (前缀树) | LeetCode 题解链接 | 中等 | 🤩🤩🤩🤩🤩 |
+| 211. 添加与搜索单词 - 数据结构设计 | LeetCode 题解链接 | 中等 | 🤩🤩🤩🤩🤩 |
+| 212. 单词搜索 II | LeetCode 题解链接 | 困难 | 🤩🤩🤩🤩 |
+| 1707. 与数组中元素的最大异或值 | LeetCode 题解链接 | 困难 | 🤩🤩🤩 |
+
+
+![20211031003058](https://raw.githubusercontent.com/corykingsf/hack-interview-handbook/main/image/20211031003058.png)

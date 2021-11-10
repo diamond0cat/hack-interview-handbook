@@ -1,5 +1,6 @@
 
-
+- 什么时候导数据？ y用户要数据的时候导数据
+- pop栈没有拿完的时候不能导数据，否则新导的数据会盖在旧数据上面
 
 ```java
 class MyQueue {
@@ -19,13 +20,13 @@ class MyQueue {
     
     /** Removes the element from in front of queue and returns that element. */
     public int pop() {
-        if (output.isEmpty()) move();
+        if (output.isEmpty()) move();   //用户要数据的时候导数据
         return output.pollFirst();
     }
     
     /** Get the front element. */
     public int peek() {
-      if (output.isEmpty()) move();
+      if (output.isEmpty()) move();  //用户要数据的时候导数据
        return output.peekFirst();
     }
     
@@ -39,13 +40,3 @@ class MyQueue {
        }
     }
 }
-
-/**
- * Your MyQueue object will be instantiated and called as such:
- * MyQueue obj = new MyQueue();
- * obj.push(x);
- * int param_2 = obj.pop();
- * int param_3 = obj.peek();
- * boolean param_4 = obj.empty();
- */
- ```
