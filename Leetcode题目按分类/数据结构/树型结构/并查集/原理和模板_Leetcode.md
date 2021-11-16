@@ -1,3 +1,6 @@
+连通性问题的通解
+-
+
 并查集是一种建立在「数组」上的树形结构，并且这棵树的特点是孩子结点指向父亲结点
 -
 「并查集」主要用于解决「动态连通性」问题，重点关注的是连接问题，并不关注路径问题；
@@ -460,3 +463,8 @@ public int find(int p) {
 |  | 1970 | Last Day Where You Can Still Cross | 47.8% | Hard |  |
 |  | 1998 | GCD Sort of an Array | 45.1% | Hard |  |
 |  | 2003 | Smallest Missing Genetic Value in Each Subtree | 40.4% | Hard |  |sx 
+
+
+
+
+
