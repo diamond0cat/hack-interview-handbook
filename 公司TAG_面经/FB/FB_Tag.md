@@ -11,11 +11,11 @@
 |     | 973  | K Closest Points to Origin                                         | 65.7%      | Medium     |          | topK问题. 1.quick select模板题 2.堆        |
 |     | 560  | Subarray Sum Equals K                                              | 43.7%      | Medium     |          | prefixSum用hashmap存一下                   |
 |     | 297  | Serialize and Deserialize Binary Tree                              | 52.2%      | Hard       |          |1.递归   2.BFS  |
-|     | 238  | Product of Array Except Self                                       | 62.7%      | Medium     |          |                                            |
-|     | 10   | Regular Expression Matching                                        | 28.0%      | Hard       |          |                                            |
-|     | 29   | Divide Two Integers                                                | 17.0%      | Medium     |          |                                            |
-|     | 415  | Add Strings                                                        | 50.9%      | Easy       |          |                                            |
-|     | 211  | Design Add and Search Words Data Structure                         | 42.5%      | Medium     |          |                                            |
+|     | 238  | Product of Array Except Self                                       | 62.7%      | Medium     |          | 前缀和思想                                           |
+|     | 10   | Regular Expression Matching                                        | 28.0%      | Hard       |          | DP                                           |
+|     | 29   | Divide Two Integers                                                | 17.0%      | Medium     |          |不能用乘除，不能用long类型，只能用加减，倍增的思想                                            |
+|     | 415  | Add Strings                                                        | 50.9%      | Easy       |          |  模拟题                                          |
+|     | 211  | Design Add and Search Words Data Structure                         | 42.5%      | Medium     |          |  trie                                          |
 |     | 76   | Minimum Window Substring                                           | 37.9%      | Hard       |          |                                            |
 |     | 1428 | Leftmost Column with at Least a One                                | 51.6%      | Medium     |          |                                            |
 |     | 173  | Binary Search Tree Iterator                                        | 63.4%      | Medium     |          |                                            |
