@@ -121,7 +121,7 @@
 |     | 767  | Reorganize String                                                  | 51.2%      | Medium     |          |                                            |
 |     | 378  | Kth Smallest Element in a Sorted Matrix                            | 58.6%      | Medium     |          |                                            |
 |     | 51   | N-Queens                                                           | 54.7%      | Hard       |          |                                            |
-|     | 224  | Basic Calculator                                                   | 39.6%      | Hard       |          |                                            |
+|     | 224  | Basic Calculator                                                   | 39.6%      | Hard       |          |栈解决                                            |
 |     | 32   | Longest Valid Parentheses                                          | 30.7%      | Hard       |          |                                            |
 |     | 597  | Friend Requests I: Overall Acceptance Rate                         | 42.5%      | Easy       |          |                                            |
 |     | 766  | Toeplitz Matrix                                                    | 66.8%      | Easy       |          |                                            |
