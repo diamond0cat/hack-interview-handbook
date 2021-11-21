@@ -20,12 +20,12 @@
 |     | 1428 | Leftmost Column with at Least a One                                | 51.6%      | Medium     |          |                                            |
 |     | 173  | Binary Search Tree Iterator                                        | 63.4%      | Medium     |          |                                            |
 |     | 125  | Valid Palindrome                                                   | 40.0%      | Easy       |          |                                            |
-|     | 282  | Expression Add Operators                                           | 38.8%      | Hard       |          |                                            |
+|     | 282  | Expression Add Operators                                           | 38.8%      | Hard       |          | backtracking                                           |
 |     | 91   | Decode Ways                                                        | 28.9%      | Medium     |          |                                            |
-|     | 269  | Alien Dictionary                                                   | 34.3%      | Hard       |          |                                            |
+|     | 269  | Alien Dictionary                                                   | 34.3%      | Hard       |          |拓扑排序. 1.相邻单词比较:因为顺序有传递性,根据字典中的相邻单词，构建有向图，图中节点为单词的字符w.
 |     | 23   | Merge k Sorted Lists                                               | 45.1%      | Hard       |          |                                            |
 |     | 689  | Maximum Sum of 3 Non-Overlapping Subarrays                         | 48.0%      | Hard       |          |                                            |
-|     | 31   | Next Permutation                                                   | 34.8%      | Medium     |          |                                            |
+|     | 31   | Next Permutation                                                   | 34.8%      | Medium     |          |scan from right to left, find first index which break the ascending order                                            |
 |     | 124  | Binary Tree Maximum Path Sum                                       | 36.8%      | Hard       |          |                                            |
 |     | 311  | Sparse Matrix Multiplication                                       | 65.1%      | Medium     |          |                                            |
 |     | 253  | Meeting Rooms II                                                   | 48.5%      | Medium     |          |                                            |
@@ -34,7 +34,7 @@
 |     | 314  | Binary Tree Vertical Order Traversal                               | 49.3%      | Medium     |          |                                            |
 |     | 56   | Merge Intervals                                                    | 43.3%      | Medium     |          |                                            |
 |     | 426  | Convert Binary Search Tree to Sorted Doubly Linked List            | 63.4%      | Medium     |          |                                            |
-|     | 1570 | Dot Product of Two Sparse Vectors                                  | 90.8%      | Medium     |          |                                            |
+|     | 1570 | Dot Product of Two Sparse Vectors                                  | 90.8%      | Medium     |          |稀疏向量用hashmap存，遍历size较小的hashmap,用list存更好，还可以用binary search,如果两个list的size差距比较大                                            |
 |     | 543  | Diameter of Binary Tree                                            | 52.4%      | Easy       |          |                                            |
 |     | 157  | Read N Characters Given Read4                                      | 39.5%      | Easy       |          |                                            |
 |     | 199  | Binary Tree Right Side View                                        | 58.3%      | Medium     |          |                                            |
@@ -57,7 +57,7 @@
 |     | 340  | Longest Substring with At Most K Distinct Characters               | 46.7%      | Medium     |          |                                            |
 |     | 325  | Maximum Size Subarray Sum Equals k                                 | 48.5%      | Medium     |          |                                            |
 |     | 825  | Friends Of Appropriate Ages                                        | 44.9%      | Medium     |          |                                            |
-|     | 200  | Number of Islands                                                  | 52.1%      | Medium     |          |                                            |
+|     | 200  | Number of Islands                                                  | 52.1%      | Medium     |          |find all reachable nodes, mark visited method 1                                            |
 |     | 146  | LRU Cache                                                          | 38.4%      | Medium     |          |                                            |
 |     | 896  | Monotonic Array                                                    | 58.1%      | Easy       |          |                                            |
 |     | 528  | Random Pick with Weight                                            | 45.6%      | Medium     |          |                                            |
@@ -77,7 +77,7 @@
 |     | 227  | Basic Calculator II                                                | 40.0%      | Medium     |          |                                            |
 |     | 349  | Intersection of Two Arrays                                         | 67.5%      | Easy       |          |                                            |
 |     | 98   | Validate Binary Search Tree                                        | 29.8%      | Medium     |          |                                            |
-|     | 277  | Find the Celebrity                                                 | 45.5%      | Medium     |          |                                            |
+|     | 277  | Find the Celebrity                                                 | 45.5%      | Medium     |          |贪心The first pass is to pick out the candidate. If candidate knows i, then switch candidate. The second pass is to check whether the candidate is real.                                            |
 |     | 341  | Flatten Nested List Iterator                                       | 57.5%      | Medium     |          |                                            |
 |     | 398  | Random Pick Index                                                  | 61.6%      | Medium     |          |                                            |
 |     | 1762 | Buildings With an Ocean View                                       | 81.4%      | Medium     |          |                                            |
@@ -126,7 +126,7 @@
 |     | 597  | Friend Requests I: Overall Acceptance Rate                         | 42.5%      | Easy       |          |                                            |
 |     | 766  | Toeplitz Matrix                                                    | 66.8%      | Easy       |          |                                            |
 |     | 647  | Palindromic Substrings                                             | 63.7%      | Medium     |          |                                            |
-|     | 79   | Word Search                                                        | 39.0%      | Medium     |          |                                            |
+|     | 79   | Word Search                                                        | 39.0%      | Medium     |          |backtracking                                            |
 |     | 285  | Inorder Successor in BST                                           | 45.4%      | Medium     |          |                                            |
 |     | 346  | Moving Average from Data Stream                                    | 75.0%      | Easy       |          |                                            |
 |     | 1197 | Minimum Knight Moves                                               | 39.1%      | Medium     |          |                                            |
@@ -237,7 +237,7 @@
 |     | 73   | Set Matrix Zeroes                                                  | 46.8%      | Medium     |          |                                            |
 |     | 1522 | Diameter of N-Ary Tree                                             | 71.5%      | Medium     |          |                                            |
 |     | 334  | Increasing Triplet Subsequence                                     | 41.1%      | Medium     |          |                                            |
-|     | 212  | Word Search II                                                     | 38.4%      | Hard       |          |                                            |
+|     | 212  | Word Search II                                                     | 38.4%      | Hard       |          |backtracking+ trie树优化                                            |
 |     | 1344 | Angle Between Hands of a Clock                                     | 62.3%      | Medium     |          |                                            |
 |     | 19   | Remove Nth Node From End of List                                   | 37.2%      | Medium     |          |                                            |
 |     | 11   | Container With Most Water                                          | 53.2%      | Medium     |          |                                            |
@@ -578,7 +578,7 @@
 |     | 1062 | Longest Repeating Substring                                        | 59.2%      | Medium     |          |                                            |
 |     | 309  | Best Time to Buy and Sell Stock with Cooldown                      | 50.8%      | Medium     |          |                                            |
 |     | 134  | Gas Station                                                        | 43.2%      | Medium     |          |                                            |
-|     | 261  | Graph Valid Tree                                                   | 44.7%      | Medium     |          |                                            |
+|     | 261  | Graph Valid Tree                                                   | 44.7%      | Medium     |          |dfs                                            |
 |     | 509  | Fibonacci Number                                                   | 67.8%      | Easy       |          |                                            |
 |     | 472  | Concatenated Words                                                 | 43.0%      | Hard       |          |                                            |
 |     | 1748 | Sum of Unique Elements                                             | 75.1%      | Easy       |          |                                            |
